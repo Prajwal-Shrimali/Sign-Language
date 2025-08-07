@@ -8,4 +8,3 @@ labels_encoder.pkl
 realtime_predict.py
 train_asl_model.py
 working/hand_landmarks.csv
-working/hand_landmarks_with_features.csv
