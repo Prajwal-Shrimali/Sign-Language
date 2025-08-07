@@ -8,7 +8,7 @@ from collections import deque
 
 # Load your trained model and label encoder
 model = tf.keras.models.load_model('./working/models/asl_model.h5')
-label_encoder = joblib.load('./working/label_encoder.pkl')  # You must have saved it separately
+label_encoder = joblib.load('./working/label_encoder.pkl')
 
 # MediaPipe hands
 mp_hands = mp.solutions.hands
@@ -60,10 +60,10 @@ cap = cv2.VideoCapture(1)
 letter_buffer = deque()
 predicted_letter = ''
 last_prediction_time = 0
-prediction_delay = 3.0  # time between accepting new letters
+prediction_delay = 3.0 
 last_letter_time = time.time()
 
-word_timeout = 3.0  # if hand not seen for this long, finalize word
+word_timeout = 3.0 
 current_word = ""
 
 while True:
