@@ -1,0 +1,11 @@
+.venv
+ASL Letters
+asl_dataset
+How2Sign
+Synthetic ASL Alphabet
+asl_pose_hand_model_tf.keras
+labels_encoder.pkl
+realtime_predict.py
+train_asl_model.py
+working/hand_landmarks.csv
+working/hand_landmarks_with_features.csv
